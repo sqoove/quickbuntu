@@ -10,7 +10,7 @@ Follow these steps in order to transform a fresh Ubuntu installation into a read
 
 ## 1. Navigate to the Home Directory
 
-Before executing any setup commands, it’s recommended to begin from your home directory. This ensures that files, logs, and configurations are stored consistently in user-specific paths rather than system-wide directories. Starting in `$HOME` guarantees that subsequent relative paths used throughout the guide resolve correctly, simplifying maintenance later.
+Before executing any setup commands, it's recommended to begin from your home directory. This ensures that files, logs, and configurations are stored consistently in user-specific paths rather than system-wide directories. Starting in `$HOME` guarantees that subsequent relative paths used throughout the guide resolve correctly, simplifying maintenance later.
 
 ```bash
 cd $HOME
@@ -32,7 +32,7 @@ sudo sed -i 's/^enabled=1/enabled=0/' /etc/default/apport
 
 ## 3. Update and Clean the System
 
-A complete system update and cleanup is critical before installing new software. This process ensures you’re working with the latest security patches, kernel improvements, and dependency versions available in Ubuntu’s repositories. By cleaning and removing unused packages, you also free disk space and prevent version conflicts during the installation of future tools.
+A complete system update and cleanup is critical before installing new software. This process ensures you're working with the latest security patches, kernel improvements, and dependency versions available in Ubuntu's repositories. By cleaning and removing unused packages, you also free disk space and prevent version conflicts during the installation of future tools.
 
 ```bash
 sudo apt -y update && sudo apt -y upgrade && sudo apt -y dist-upgrade
@@ -127,7 +127,7 @@ cd $HOME
 
 ## 11. Install Sublime Text
 
-**Sublime Text** is a lightweight yet powerful text editor favored for its speed and simplicity. It’s ideal for editing configuration files, scripts, or quick code snippets without the overhead of a full IDE. The repository method ensures automatic updates and integration with your system’s package manager.
+**Sublime Text** is a lightweight yet powerful text editor favored for its speed and simplicity. It's ideal for editing configuration files, scripts, or quick code snippets without the overhead of a full IDE. The repository method ensures automatic updates and integration with your system's package manager.
 
 ```bash
 cd /tmp/
@@ -169,7 +169,7 @@ cd $HOME
 
 ## 14. Install Tor Browser
 
-**Tor Browser** enhances your online privacy by routing traffic through a secure, distributed network. It’s particularly useful for security researchers, ethical hackers, and developers who need to test websites under different anonymity conditions. This step installs the official Tor release and adds it as a desktop application for convenient launching.
+**Tor Browser** enhances your online privacy by routing traffic through a secure, distributed network. It's particularly useful for security researchers, ethical hackers, and developers who need to test websites under different anonymity conditions. This step installs the official Tor release and adds it as a desktop application for convenient launching.
 
 ```bash
 cd /tmp/
@@ -187,7 +187,7 @@ cd $HOME
 
 ## 15. Install Visual Studio Code
 
-**VS Code** is a powerful, extensible IDE suitable for virtually any programming language. Its integrated Git support, extensions marketplace, and debugging capabilities make it a must-have for developers. Installing it directly from Microsoft’s servers guarantees compatibility with new features and faster updates than Ubuntu’s default repositories.
+**VS Code** is a powerful, extensible IDE suitable for virtually any programming language. Its integrated Git support, extensions marketplace, and debugging capabilities make it a must-have for developers. Installing it directly from Microsoft's servers guarantees compatibility with new features and faster updates than Ubuntu's default repositories.
 
 ```bash
 cd /tmp/
@@ -213,7 +213,7 @@ cd $HOME
 
 ## 17. Install ProtonVPN
 
-ProtonVPN encrypts your internet connection, hides your IP address, and protects sensitive development traffic. It’s especially useful when accessing public Wi-Fi, working remotely, or connecting to staging servers over insecure networks. This setup installs the official ProtonVPN client and verifies package integrity using SHA-256 checks.
+ProtonVPN encrypts your internet connection, hides your IP address, and protects sensitive development traffic. It's especially useful when accessing public Wi-Fi, working remotely, or connecting to staging servers over insecure networks. This setup installs the official ProtonVPN client and verifies package integrity using SHA-256 checks.
 
 ```bash
 cd /tmp/
@@ -311,7 +311,7 @@ cd $HOME
 
 ## 23. Customize the Terminal (Zsh, Powerlevel10k, and Plugins)
 
-A developer’s terminal is a key productivity tool. This customization replaces the default Bash shell with **Zsh**, adds the **Oh My Zsh** framework, and enhances usability with features like autosuggestions and syntax highlighting. The **Powerlevel10k** theme adds a professional, informative prompt with Git, Python, and system status indicators. Together, these tweaks create a fast, elegant, and feature-rich command-line experience.
+A developer's terminal is a key productivity tool. This customization replaces the default Bash shell with **Zsh**, adds the **Oh My Zsh** framework, and enhances usability with features like autosuggestions and syntax highlighting. The **Powerlevel10k** theme adds a professional, informative prompt with Git, Python, and system status indicators. Together, these tweaks create a fast, elegant, and feature-rich command-line experience.
 
 **Default User**
 
