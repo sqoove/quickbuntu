@@ -286,7 +286,20 @@ cd $HOME
 
 * * *
 
-## 22. Clone Github Repositories
+## 22. Install Discord Desktop
+
+Discord Desktop is a powerful platform for real-time chat, voice communication, file exchange, and automation through bots. For developers, it serves as a central hub for team collaboration, live system alerts, and instant feedback from CI/CD workflows or monitoring tools. Installing it directly from the official source lets you access the newest features and security updates immediately, without relying on delayed third-party repositories.
+
+```bash
+cd /tmp/
+wget -O "discord.deb" "https://discord.com/api/download?platform=linux&format=deb"
+sudo dpkg -i /tmp/discord.deb
+cd $HOME
+```
+
+* * *
+
+## 23. Clone Github Repositories
 
 This step retrieves the Quickbuntu repositories from GitHub, which contains essential tools and scripts developed by Sqoove to automate and optimize Ubuntu setups.
 
@@ -309,7 +322,7 @@ cd $HOME
 
 * * *
 
-## 23. Customize the Terminal (Zsh, Powerlevel10k, and Plugins)
+## 24. Customize the Terminal (Zsh, Powerlevel10k, and Plugins)
 
 A developer's terminal is a key productivity tool. This customization replaces the default Bash shell with **Zsh**, adds the **Oh My Zsh** framework, and enhances usability with features like autosuggestions and syntax highlighting. The **Powerlevel10k** theme adds a professional, informative prompt with Git, Python, and system status indicators. Together, these tweaks create a fast, elegant, and feature-rich command-line experience.
 
@@ -390,7 +403,7 @@ cd /root/
 
 * * *
 
-## 24. Configure Powerlevel10k
+## 25. Configure Powerlevel10k
 
 After installation, configure the **Powerlevel10k** theme to match your preferences. The configuration wizard lets you adjust icons, color schemes, segment styles, and prompt behavior. Taking the time to fine-tune this step enhances readability and helps organize command-line information efficiently.
 
@@ -400,7 +413,7 @@ p10k configure
 
 * * *
 
-## 25. Final System Update and Cleanup
+## 26. Final System Update and Cleanup
 
 To conclude, perform another full system update and cleanup. This ensures that all installed packages are up to date, redundant files are removed, and the system is left in a stable and optimized state. Running this command post-setup keeps the environment lean, secure, and ready for immediate use.
 
