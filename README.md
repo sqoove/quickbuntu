@@ -173,8 +173,8 @@ cd $HOME
 
 ```bash
 cd /tmp/
-wget -O "tor-browser-linux-x86_64-15.0.1.tar.xz" "https://www.torproject.org/dist/torbrowser/15.0.1/tor-browser-linux-x86_64-15.0.1.tar.xz"
-tar -xf /tmp/tor-browser-linux-x86_64-15.0.1.tar.xz
+wget -O "tor-browser-linux-x86_64-15.0.3.tar.xz" "https://www.torproject.org/dist/torbrowser/15.0.3/tor-browser-linux-x86_64-15.0.3.tar.xz"
+tar -xf /tmp/tor-browser-linux-x86_64-15.0.3.tar.xz
 mv /tmp/tor-browser $HOME/.local/share/tor-browser
 cd $HOME/.local/share/tor-browser/
 ./start-tor-browser.desktop &> /dev/null &
@@ -203,10 +203,8 @@ cd $HOME
 **KeePassXC** is an open-source password manager that securely stores credentials in encrypted databases. For developers managing multiple environments, servers, and API keys, it offers an offline alternative to cloud-based password tools. Its cross-platform compatibility and browser integration make it a reliable daily security companion.
 
 ```bash
-cd /tmp/
 sudo add-apt-repository -y ppa:phoerious/keepassxc
 sudo apt -y update && sudo apt -y install keepassxc
-cd $HOME
 ```
 
 * * *
@@ -305,18 +303,18 @@ This step retrieves the Quickbuntu repositories from GitHub, which contains esse
 
 ```bash
 cd /tmp/
-wget https://github.com/sqoove/blitzclean/releases/download/v4.9.7/blitzclean_4.9.7_all.deb
-sudo dpkg -i blitzclean_4.9.7_all.deb
+wget -O "blitzclean_5.0.0_all.deb" "https://github.com/sqoove/blitzclean/releases/download/v5.0.0/blitzclean_5.0.0_all.deb"
+sudo dpkg -i /tmp/blitzclean_5.0.0_all.deb
 cd $HOME
 
 cd /tmp/
-wget https://github.com/sqoove/mediasane/releases/download/v1.1.7/mediasane_1.1.7_all.deb
-sudo dpkg -i mediasane_1.1.7_all.deb
+wget -O "mediasane_1.1.8_all.deb" "https://github.com/sqoove/mediasane/releases/download/v1.1.8/mediasane_1.1.8_all.deb"
+sudo dpkg -i /tmp/mediasane_1.1.8_all.deb
 cd $HOME
 
 cd /tmp/
-wget https://github.com/sqoove/tubereaver/releases/download/v1.3.2/tubereaver_1.3.2_all.deb
-sudo dpkg -i tubereaver_1.3.2_all.deb
+wget -O "tubereaver_1.3.3_all.deb" "https://github.com/sqoove/tubereaver/releases/download/v1.3.3/tubereaver_1.3.3_all.deb"
+sudo dpkg -i /tmp/tubereaver_1.3.3_all.deb
 cd $HOME
 ```
 
